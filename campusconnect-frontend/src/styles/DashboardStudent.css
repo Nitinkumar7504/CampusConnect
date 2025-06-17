@@ -1,0 +1,93 @@
+/* src/styles/DashboardStudent.css */
+
+.student-dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9fbfd;
+  border-radius: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.student-dashboard h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.student-dashboard h3 {
+  font-size: 1.25rem;
+  color: #34495e;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+.attendance-box {
+  background-color: #e8f4ff;
+  color: #1a5276;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.15);
+}
+
+.announcement-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.announcement-item {
+  background-color: #ffffff;
+  border: 1px solid #dfe6e9;
+  border-left: 6px solid #3498db;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2d3436;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.announcement-item span {
+  display: block;
+  color: #636e72;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #dcdde1;
+  margin: 2rem 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .student-dashboard {
+    padding: 1rem;
+  }
+
+  .student-dashboard h2 {
+    font-size: 1.5rem;
+  }
+
+  .student-dashboard h3 {
+    font-size: 1.1rem;
+  }
+
+  .attendance-box {
+    font-size: 1rem;
+  }
+
+  .announcement-item {
+    font-size: 0.95rem;
+  }
+}

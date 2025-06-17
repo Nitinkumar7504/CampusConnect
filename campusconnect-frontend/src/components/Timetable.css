@@ -1,0 +1,26 @@
+.timetable {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.timetable th {
+  background-color: #f5f5f5;
+}
+
+.timetable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

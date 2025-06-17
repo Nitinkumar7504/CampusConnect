@@ -1,0 +1,64 @@
+.attendance-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 170px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  margin: 10px;
+}
+
+.attendance-card:hover {
+  transform: translateY(-5px);
+}
+
+.attendance-card .subject {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.attendance-card .count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.progress-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #7c3aed;
+  margin: 0 auto 10px;
+}
+
+.attendance-card .footer {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .attendance-card {
+    background-color: #1f2937;
+    color: #f9fafb;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+  }
+
+  .progress-circle {
+    color: #c4b5fd;
+  }
+
+  .attendance-card .footer {
+    color: #9ca3af;
+  }
+}

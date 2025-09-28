@@ -1,4 +1,3 @@
-// src/AppNav.js
 import React from 'react';
 
 export default function AppNav() {
@@ -12,3 +11,4 @@ export default function AppNav() {
     </nav>
   );
 }
+

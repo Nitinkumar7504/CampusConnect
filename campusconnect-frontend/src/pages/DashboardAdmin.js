@@ -19,7 +19,7 @@ export default function DashboardAdmin() {
       const res = await axios.get('http://localhost:5000/api/admin/students');
       setStudents(res.data);
     } catch (error) {
-      alert('❌ Failed to fetch student data');
+      alert('Failed to fetch student data');
     }
   };
 
@@ -28,7 +28,7 @@ export default function DashboardAdmin() {
       const res = await axios.get('http://localhost:5000/api/admin/announcements');
       setAnnouncements(res.data);
     } catch (error) {
-      console.error('❌ Failed to fetch announcements:', error);
+      console.error(' Failed to fetch announcements:', error);
     }
   };
 
@@ -44,10 +44,10 @@ export default function DashboardAdmin() {
       await axios.put(`http://localhost:5000/api/admin/student/${studentId}`, {
         attendance,
       });
-      alert('✅ Student updated successfully');
+      alert(' Student updated successfully');
     } catch (error) {
-      console.error('❌ Failed to update student:', error.message);
-      alert('❌ Failed to update student');
+      console.error(' Failed to update student:', error.message);
+      alert(' Failed to update student');
     }
   };
 
@@ -60,7 +60,7 @@ export default function DashboardAdmin() {
       setNewAnnouncement('');
       fetchAnnouncements();
     } catch (error) {
-      alert('❌ Failed to post announcement');
+      alert(' Failed to post announcement');
     }
   };
 
@@ -112,3 +112,4 @@ export default function DashboardAdmin() {
     </div>
   );
 }
+

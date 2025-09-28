@@ -1,4 +1,4 @@
-// routes/auth.js
+
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
@@ -6,7 +6,6 @@ const bcrypt = require('bcrypt');
 const User = require('../models/User');
 const authMiddleware = require('../middleware/auth');
 
-// Register route
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -30,7 +29,6 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// Login route
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -56,7 +54,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Protected route
 router.get('/profile', authMiddleware, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');
@@ -68,3 +65,4 @@ router.get('/profile', authMiddleware, async (req, res) => {
 });
 
 module.exports = router;
+

@@ -14,7 +14,7 @@ import DashboardAdmin from './pages/DashboardAdmin';
 import AdminPrivateRoute from './components/AdminPrivateRoute';
 import { isAdminLoggedIn } from './constants/adminAuth';
 import AppNav from './AppNav';
-import Welcome from './pages/Welcome'; // ✅ Import Welcome
+import Welcome from './pages/Welcome';
 
 import './styles/App.css';
 

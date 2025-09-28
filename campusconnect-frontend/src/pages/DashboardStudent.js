@@ -16,7 +16,7 @@ const DashboardStudent = () => {
       const res = await axios.get('http://localhost:5000/api/admin/announcements');
       setAnnouncements(res.data);
     } catch (err) {
-      console.error('❌ Failed to load announcements:', err.message);
+      console.error(' Failed to load announcements:', err.message);
     }
   };
 
@@ -30,7 +30,7 @@ const DashboardStudent = () => {
       });
       setStudent(res.data);
     } catch (err) {
-      console.error('❌ Failed to load student profile:', err.message);
+      console.error(' Failed to load student profile:', err.message);
     }
   };
 
@@ -61,3 +61,4 @@ const DashboardStudent = () => {
 };
 
 export default DashboardStudent;
+

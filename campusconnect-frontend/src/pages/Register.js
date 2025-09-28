@@ -30,7 +30,7 @@ export default function Register() {
       }
     } catch (err) {
       console.error('Register error:', err);
-      alert(err?.response?.data?.message || '❌ Registration failed');
+      alert(err?.response?.data?.message || ' Registration failed');
     } finally {
       setLoading(false);
     }
@@ -42,7 +42,7 @@ export default function Register() {
       
       {emailSent ? (
         <div className="success-message">
-          <h3>✅ Registration Successful!</h3>
+          <h3> Registration Successful!</h3>
           <p>We've sent a confirmation email to {form.email}. Please check your inbox and verify your email address.</p>
           <p>Didn't receive the email? <button type="button" onClick={() => setEmailSent(false)}>Resend</button></p>
         </div>
@@ -80,4 +80,5 @@ export default function Register() {
       )}
     </form>
   );
+
 }
